@@ -1,0 +1,459 @@
+/* レスポンシブ対応 */
+* {
+  box-sizing: border-box;
+}
+/*-------  ここから色  --------*/
+.red {
+  color:red;
+}
+.white {
+  color:black;
+}
+.blue {
+  color:blue;
+}
+.yellow {
+  color:#ffd700;
+}
+.green {
+  color:green;
+}
+.bold {
+  font-weight: bold;
+}
+/*-------  ここまで色  --------*/
+
+/*-------  ここから共通のCSS  --------*/
+body {
+  margin: 0;
+  font-family: "Hiragino Kaku Gothic ProN", sans-serif;
+ /* font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+  font-size: 14px;
+  color: #888;
+  font-family:"Avenir Next";*/
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  /*list-style: inside;*/
+ 
+}
+
+li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #323A45;
+  transition: all .3s;
+}
+
+a:hover {
+  color: #5983ff;
+  text-decoration: none;
+}
+
+h2, h3, h4, h5, h6 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-weight: 400;
+}
+
+h4, h5 {
+  color: #444;to
+  font-size: 18px;
+}
+
+h3:before, h3:after{
+  content: "";
+  background-color: #616161;
+  display: inline-block;
+
+  height: 1px;
+  /*margin: 0 6rem;*/
+  vertical-align: middle;
+}
+
+
+/* clearクラスにfloatを解除するためのCSSを記述してください */
+.clear {
+  clear:left;
+}
+
+
+
+.container {
+    /* max-widthを1170pxに指定してください */
+    max-width:1170px;
+  width:100%;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+
+.section-title {
+  color: #555;
+  padding-top: 60px;
+  padding-bottom: 10px;
+  /*text-align: center;*/
+
+}
+
+.section-title h3 {
+  margin: 10px 0;
+  font-size: 32px;
+  font-weight: 300;
+  line-height: 36px;
+}
+
+.gray-section {
+  background: #f4f4f4;
+  color: #888;
+}
+/*
+.heading {
+  padding-top: 60px;
+  padding-bottom: 30px;
+  color: #5f5d60;
+}
+*/
+
+/*-------  ここまで共通のCSS  --------*/
+/*--------- ここからボタン --------*/
+.btn-wrapper {
+  margin: 20px 0;
+}
+
+.btn-wrapper p {
+  margin: 10px 0;
+}
+
+
+.btn {
+  padding: 8px 24px;
+  color: white;
+  display: inline-block;
+  opacity: 0.8;
+  border-radius: 4px;
+}
+
+.btn:hover {
+  opacity: 1;
+}
+
+/*-------- ここまでボタン --------*/
+/*-------  ここからheader  --------*/
+header {
+  height: 50px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  /*background-color: #26d0c9;*/
+  background-color:rgba(21, 230, 83, 0.9);
+  line-height: 50px;
+  box-shadow: -1px 1px 1px rgba(0,0,0,0.1);
+  z-index: 10;
+}
+
+.header-title {
+  float: left;
+
+  margin-top:2px;
+}
+
+.header-logo {
+  color: #777;
+  font-weight: 700;
+  font-size: 20px;
+  font-family: 'Dosis', sans-serif;
+  cursor: pointer;
+}
+.header-menu {
+  float: right;
+}
+.header-menu-right {
+  float: right;
+}
+
+.header-menu-right li {
+  float: left;
+  display: block;
+}
+
+.header-menu-right a {
+  color: #323A45;
+  font-weight: 700;
+  padding: 10px;
+  text-decoration: none;
+}
+
+.header-menu-right a:hover {
+  color: #5983ff;
+  transition: color .3s;
+}
+/* header-rightクラスのCSSを指定してください */
+.header-right{
+  float:right;
+  background-color:rgba(255, 255, 255, 0.3);  
+  transition:all 0.5s;
+}
+
+/* header-rightクラスにhoverしたときのCSSを指定してください */
+.header-right a:hover{
+  background-color:rgba(255, 255, 255, 0.5);
+}
+/* header-rightの中の<a>のCSSを指定してください */
+.header-right a{
+  line-height:50px;
+  padding:0 25px;
+  color:white;
+  display:block;
+}
+.menu-icon {
+  color: white;
+  float: right;
+  /*font-size: 25px;
+  padding: 21px 0;*/
+  /* displayをnoneに指定してください */
+  display:none; 
+
+
+}
+
+
+
+/*-------  ここまでheader  --------*/
+
+
+
+
+
+/*-------  ここから今日のKIN  --------*/
+.todayKINs-section {
+  margin-top: 50px;
+  background-color: #fffaf0;
+  color:black;
+  /*text-align:center;*/
+
+}
+.todayKINs-section p {
+ display:inline;/*改行しない*/
+ /*text-decoration: underline;*下線*/
+}
+.todayKINs-section img {
+  display: inline-block;
+
+ }
+ .todayKINs-section #imgOto {
+  display: inline-block;
+
+ }
+
+
+ .listTitle{
+  display: inline-block;
+  border-bottom:2px solid #000000 ;
+  padding:10px;
+  /*margin:20px;*/
+  font-family : rerif;
+  background-color: yellow;
+  height: 40px;
+
+}
+
+
+.table-today tr,th,td {
+  width: auto !important;
+  border: 0px non #fffaf0;
+  vertical-Align:bottom;
+}
+.table-today img{
+  width:100%;
+}
+.image-wrapper{
+  display: inline-block;
+  text-align:center;  
+  height:500px;
+  width:100%;
+  padding-top:20px;
+  padding-bottom:20px;
+  background-color:#f7f7f7;
+}
+.image1{
+  position:relative;
+  float:left;
+  align-items:center;
+
+}
+.image2{
+  position:relative;
+  float:left;
+
+}
+
+.text-contents{
+  width:80%;
+  display:inline-block;
+  margin-top:20px;
+  font-size:12px;
+  color:#b3aeb5;
+}
+.image-icon1{
+
+
+}
+.image-icon2{
+
+  padding-top:30%;
+
+  
+
+}
+/*-------  ここまで今日のKIN  --------*/
+/*------- ここからレッスン ------------------*/
+.lesson-wrapper {
+ /* height: 580px;*/
+  padding-bottom: 80px;
+  padding-left: 5%;
+  padding-right: 5%;
+  background-color: #f7f7f7;
+  text-align: center;
+}
+
+.heading {
+  padding-top: 80px;
+  padding-bottom: 50px;
+  color: #5f5d60;
+}
+
+
+.lesson {
+  float: left;
+  width: 25%;
+}
+
+.lesson-icon {
+  position: relative;
+}
+
+.lesson-icon p {
+  position: absolute;
+  top: 44%;
+  width: 100%;
+  color: white;
+  display:block;
+  /*text-align:center;*/
+
+}
+
+.text-contents {
+  width: 80%;
+  display: inline-block;
+  margin-top: 15px;
+  font-size: 13px;
+  color: #b3aeb5;
+}
+
+.heading h3 {
+  font-weight: normal;
+}
+
+.message-wrapper {
+  border-bottom: 1px solid #eee;
+  padding-bottom: 80px;
+  text-align: center;
+}
+
+.message {
+  padding: 15px 40px;
+  background-color: #5dca88;
+  cursor: pointer;
+  box-shadow: 0px 7px #1a7940;
+}
+
+.message:active {
+  position: relative;
+  top: 7px;
+  box-shadow: none;
+}
+/*------- ここまでレッスン ------------------*/
+/*-------  ここからあなたのKIN  --------*/
+.yourKINs-section {
+  background-color: #e0ffff;
+  color:black;
+  /* text-align:center;  */
+}
+
+.calender1{
+  display:inline;/*改行しない*/
+}
+
+/*-------  ここまであなたのKIN  --------*/
+
+/*--------- ここからメッセージ -------------------------*/
+/* message-wrapperクラスのCSSを指定してください */
+.message-wrapper{
+  border-bottom:1px solid #eee;
+  padding-bottom:80px;
+  /*text-align:center;*/
+}
+/* messageのCSSを指定してください */
+.message{
+  background-color:#5dca88;
+  padding:15px 40px;
+    /* カーソルの形をpointerにしてください */
+    cursor:pointer;  
+    /* box-shadowをつけてください */
+    box-shadow:0 7px #1a7940;
+    text-align: center;
+    border: 1px solid #232323;
+}
+
+
+
+
+
+/* headingの中の<h3>のCSSを指定してください */
+.heading h3{
+  font-weight:normal;
+  
+}
+.heading h2 {
+  font-weight: normal;
+}
+.heading h3 {
+  font-weight: normal;
+}
+/* messageクラスがクリックされているときのCSSを指定してください */
+.message:active{
+  box-shadow:none;
+  position:relative;
+  top:7px;
+}
+/*--------- ここまでメッセージ -------------------------*/
+
+/*------－ここからフッター-------------------*/
+/* <footer>の中の<img>のCSSを指定してください */
+footer img{
+  width:125px;
+  
+}
+
+
+/* <footer>の中の<p>のCSSを指定してください */
+footer p{
+  color:#b3aeb5;
+  font-size:12px;
+}
+
+
+/* <footer>のCSSを指定してください */
+footer {
+  padding-top:30px;
+/*------－ここまでフッター-------------------*/
